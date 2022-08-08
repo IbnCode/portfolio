@@ -62,7 +62,7 @@ const Header = () => {
             <a className="navitem" href="/Awards_and_Extracurriculars" onClick={(e) => {toComponentB("/Awards_and_Extracurriculars",e)}}>Awards and Extracurriculars</a>
             <a className="navitem" href="/Experience" onClick={(e) => {toComponentB("/Experience",e)}}>Experience</a>
 
-            <img className="navitem" src={loc.state.mody === "dark" ? "sun3.png" : "moon3.png"}  onClick={switchMode}/>
+            <img className="navitem" src={loc.state == null ? "moon3.png" : loc.state.mody === "dark" ? "sun3.png" : "moon3.png"}  onClick={switchMode}/>
             </div>
 
             <div className= {menu} onClick={() => jary()}>
