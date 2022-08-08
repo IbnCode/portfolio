@@ -4,28 +4,25 @@ html, body {
   margin : 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Century Gothic'
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', 'Century Gothic'
     monospace;
 }
-
+.dark{
+  background-color: #030303;
+}
 
 .nav {
   position: fixed;
   font-family: 'Gothic A1', sans-serif;
-  justify-content: space-between;
   align-items: center;
   padding-top: 30px;
   padding-left: 50px;
   padding-bottom: 10px;
   padding-right: 20px;
-  
-  gap: 3rem;
+  display: flex;
+  gap: 0.5rem;
   width: 100%;
 
 }
@@ -51,13 +48,18 @@ code {
   color: #1f2022;
 }
 
- .nav a{
+.nav a{
+  display: flex;
   margin-left: 10px;
+  margin-top: 0;
+  padding-top: 0;
   text-decoration: none;
+
 }
 
-
-
+.img{
+  margin-left: 20px;
+}
 
 .nav a.active {
   color: black;
@@ -72,7 +74,7 @@ code {
 
 
 .ahmed {
-  padding-left: 20px;
+  padding-left: 50px;
   margin: 0;
   border: 0;
 }
@@ -81,20 +83,105 @@ code {
   color: #E4E6E1;
 }
 
-.nav ul{
+.nav .navitem{
   font-size: 18px;
-  margin: 0;
   margin-left: 20px;
   padding: 0;
-  list-style: none;
   display: flex;
-  gap: 1rem;
 }
 
 .nav img{
   width: 25px;
   display: flex;
 
+}
+.navItems{
+  display: flex;
+}
+.abood{
+  display: none;
+} 
+@media only screen and (max-width: 768px) {
+   .navItems, .nav {
+    flex-direction: column;
+    gap: 0.5rem;
+
+    }
+    .nav{
+      padding-left: 0px;
+      margin-left: 0px;
+      gap: 0.5rem;
+      align-items:flex-start;
+    
+    }
+
+    .closed {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .opened {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .bar1, .bar2, .bar3 {
+      width: 30px;
+      height: 3px;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    
+    .white .bar1, .white .bar2, .white .bar3 {
+      background-color: #1f2022;
+
+    }
+    .dark .bar1, .bar2, .bar3 {
+      background-color: #E4E6E1;
+
+    }
+
+    .opened .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .home  img{
+      min-width:30%;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    
+    }
+    
+    .opened .bar2 {opacity: 0;}
+    
+    .opened .bar3 {
+      -webkit-transform: rotate(45deg) translate(-6px, -8px);
+      transform: rotate(45deg) translate(-6px, -8px);
+    }
+    
+    .nav a{
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+    .ahmed{
+      margin-left: 0px;
+      padding-left: 20px;
+    }
+    .toggleClosed .navItems{
+      display: none;
+    }
+    .toggleOpened  .abood{
+      display: flex;
+      margin-bottom:110px;
+    }
+    .ahmed{
+      padding-top: 4px;
+    }
 }
 
 .home .one img{
@@ -105,7 +192,11 @@ code {
   font-family: 'Courier New', Courier, monospace;
 }
 .home div{
-  padding-top: 120px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.home .first{
+  padding-top: 70px;
   padding-bottom: 10px;
 }
 
@@ -124,36 +215,39 @@ code {
 
 }
 .dark  .home .one{
-  background-color:  	#1f2022;
+  background-color:  	#141415;
   color: #F8F8FF;
 
 }
 
 .white  .home .two{
-  background-color:  	#F0f0f0;
+  background-color:  	rgb(238, 239, 240);
   color: #2E3033;
 
 }
 .dark  .home .two{
-  background-color:  	#2E3033;
+  background-color:  	#171819;
   color: #F8F8FF;
 
 }
 .home .two img{
   float: left;
-  margin-right: 50px;
 }
 
 .home  img{
-  margin-bottom: 50px;
   display: flex;
-  max-width:30%;
+  margin-right: 25px;
+  margin-bottom: 25px;
+
+  max-width:15%;
 }
 
 .home div p{
   padding-top: 10px;
   font-family: 'Gothic A1', sans-serif;
   font-weight: light;
+  margin-bottom: 25px;
+
   margin: 0px;
 
 }
@@ -164,6 +258,10 @@ code {
   padding-left: 5%;
   background-color: #F5f5f5;
 }
+.home h5{
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 15px;
+}
 
 .home{
 
@@ -173,4 +271,12 @@ code {
   padding: 0px;
   width: 100%;
 
+}
+.go{
+ margin-top: 100px;
+}
+.header img{
+  margin-top: 3px;
+  width: 20px;
+  height: 20px;
 }
