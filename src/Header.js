@@ -46,7 +46,7 @@ const Header = () => {
 
     return (
         <div className="header">
-        <div className={loc.state.mody}>
+        <div className={loc.state == null ? "light" : loc.state.mody}>
         <div className={toggle}>
 
         <nav className="nav">
