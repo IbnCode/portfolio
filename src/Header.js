@@ -2,7 +2,6 @@ import {  useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useRef } from "react";
 import { useLayoutEffect } from "react";
-import { Navbar } from 'react-bootstrap';
 import React  from 'react';
 
 const Header = () => {
@@ -23,7 +22,7 @@ const Header = () => {
 
         }
     }
-      
+
   const toComponentB=(child, e)=>{
     navigate(  child, {state:{mody : mode}});
     e.preventDefault();
@@ -40,22 +39,22 @@ const Header = () => {
             setMode("white");
             navigate(  window.location.pathname, {state:{mody : "white"}});
      }
-        
+
 
     }
 
-    return ( 
+    return (
         <div className="header">
-        <div className={mode}> 
+        <div className={mode}>
         <div className={toggle}>
-       
+
         <nav className="nav">
             <h3 className="ahmed" ref={ref}>
 
         <a href="/" onClick={(e) => {toComponentB("/", e); return false}  }  >
-                        Ahmed Al Mudarris 
+                        Ahmed Al Mudarris
         </a>
-        
+
                     </h3>
                     <div className="navItems" >
             <a className="navitem" href="/Education" onClick={(e) => {toComponentB("/Education", e)}}>Education</a>
@@ -63,7 +62,7 @@ const Header = () => {
             <a className="navitem" href="/Experience" onClick={(e) => {toComponentB("/Experience",e)}}>Experience</a>
 
             <img className="navitem" src={mode === "dark" ? "sun3.png" : "moon3.png"}  onClick={switchMode}/>
-            </div>            
+            </div>
 
             <div className= {menu} onClick={() => jary()}>
             <div className="bar1"></div>
@@ -79,6 +78,6 @@ const Header = () => {
     )
 
 }
- 
+
 
 export default Header;

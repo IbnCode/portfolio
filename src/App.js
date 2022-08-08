@@ -3,7 +3,6 @@ import Education from './pages/Education';
 import Experience from './pages/Experience';
 import Projects from './pages/Awards_and_Extracurriculars';
 import Header from './Header';
-import HeaderCopy from './HeaderCopy';
 import React  from 'react';
 
 import { Route, Routes } from 'react-router-dom';
