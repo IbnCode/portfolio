@@ -1,3 +1,18 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+
+
+
+<div><p> I received the NSERC USRA award and am working under the supervision of Dr. Wolfram Kahl of McMaster University in the Department of Computing and Software. The research is primarily in graph term rewriting, focusing on associative-commutative matching algorithms.  </p><p> My primary duties are:   </p>
+<ul>
+<li>Acquire the necessary background knowledge in term rewriting and term graph rewriting. </li>
+<li>Acquire an in-depth understanding of the existing `graph-rewriting` Haskell packages.  </li>
+<li>Design and implement a way to port Contejean's AC matching algorithm to the `graph-rewriting` Haskell packages.  </li>
+<li>Use the visualization features to implement ways to demonstrate “AC-matching in action”.  </li>
+<li>If time permits, extend also to matching modulo self-inverse and/or identity laws.  </li>
+</ul>
+
+<p> I gained an extensive experience in Algorithm optimization and working with several data structures and developed my documentation and research writing skills.I have also gained experience in Haskell and functional programming, and advanced my computational thinking skills. <p>
+</div>

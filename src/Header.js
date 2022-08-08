@@ -1,4 +1,4 @@
-import {  useNavigate } from "react-router-dom";
+import {  useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useRef } from "react";
 import { useLayoutEffect } from "react";
@@ -6,10 +6,11 @@ import React  from 'react';
 
 const Header = () => {
     const navigate = useNavigate();
-    const [mode, setMode] = useState("white");
+    const [mode, setMode] = useState("light");
     const ref = useRef(null);
     const [menu, setMenu] = useState("closed");
     const [toggle, setToggle] = useState("toggleClosed");
+    let loc = useLocation();
 
     const jary = () => {
         if (menu === "opened"){
@@ -30,14 +31,14 @@ const Header = () => {
       }
 
    const switchMode = () => {
-        if (mode === "white") {
+        if (mode === "light") {
             setMode("dark");
             navigate(  window.location.pathname, {state:{mody : "dark"}});
 
         }
         else {
-            setMode("white");
-            navigate(  window.location.pathname, {state:{mody : "white"}});
+            setMode("light");
+            navigate(  window.location.pathname, {state:{mody : "light"}});
      }
 
 
@@ -45,7 +46,7 @@ const Header = () => {
 
     return (
         <div className="header">
-        <div className={mode}>
+        <div className={loc.state.mody}>
         <div className={toggle}>
 
         <nav className="nav">
@@ -61,7 +62,7 @@ const Header = () => {
             <a className="navitem" href="/Awards_and_Extracurriculars" onClick={(e) => {toComponentB("/Awards_and_Extracurriculars",e)}}>Awards and Extracurriculars</a>
             <a className="navitem" href="/Experience" onClick={(e) => {toComponentB("/Experience",e)}}>Experience</a>
 
-            <img className="navitem" src={mode === "dark" ? "sun3.png" : "moon3.png"}  onClick={switchMode}/>
+            <img className="navitem" src={loc.state.mody === "dark" ? "sun3.png" : "moon3.png"}  onClick={switchMode}/>
             </div>
 
             <div className= {menu} onClick={() => jary()}>
