@@ -4,8 +4,8 @@ import { useLocation } from "react-router-dom";
 const Footer = () => {
     let loc = useLocation();
 
-    return (        
-        <div className={loc.state.mody}>
+    return (
+        <div className={loc.state == null ? "light" : loc.state.mody}>
         <div className="footer">
     <div>
         ahmed.almudarris@gmail.com
@@ -23,5 +23,5 @@ const Footer = () => {
     </div>
      );
 }
- 
+
 export default Footer;
