@@ -1,6 +1,5 @@
 import OneTwo from './OneTwo';
 import React  from 'react';
-import OneTwoExp from './OneTwoExp';
 
 const Experience = () => {
     
@@ -43,7 +42,7 @@ const Experience = () => {
     
     
         return ( 
-            <OneTwoExp pkgs = {pkgs} />
+            <OneTwo pkgs = {pkgs} />
     );
     }
       

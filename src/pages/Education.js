@@ -1,5 +1,5 @@
 import React  from 'react';
-import OneTwoExp from './OneTwoExp';
+import OneTwo from './OneTwo';
 
 const Education = () => {
     const pkgs = [
@@ -14,7 +14,7 @@ const Education = () => {
 
 
     return ( 
-        <OneTwoExp pkgs = {pkgs} />
+        <OneTwo pkgs = {pkgs} />
 );
 }
  

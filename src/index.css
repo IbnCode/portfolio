@@ -156,6 +156,10 @@ code {
       margin-bottom: 15px;
     
     }
+    .footer{
+      display: flex;
+      flex-direction: column;
+    }
     
     .opened .bar2 {opacity: 0;}
     
