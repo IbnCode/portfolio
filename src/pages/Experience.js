@@ -20,7 +20,19 @@ const Experience = () => {
             , 
                 id: 0,  pic: 'Project.png', location: "McMaster University – Hamilton, ON", period: "05/2022-Now"
             },
-            {title: 'Research Assistant', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 
+            {title: 'Research Assistant', body: [
+                <div>            
+                <p> I Worked with a PhD student on her PhD research in the Department of Materials Science and Engineering.</p><p> My primary duties were:   </p>
+                <ul>
+                <li>Acquiring sufficient knowledge in the algorithm design and research area </li>
+                <li>Creating suitable test cases to test the algorithm using python, NumPy, SciPy and scikit-image.   </li>
+                <li>Creating different image interpolation algorithms to maximize efficiency.  </li>
+                <li>Using different methods of image processing to suit the given algorithm  </li>
+                <li> Contributing to the algorithm design and provided insights on the overall design and efficiency.</li>
+                </ul>
+                <p>I gained a lot of experience in testing algorithms and image processing and have advanced my python skills. I have improved my communication skills and was able to answer the needs of my supervisors and reflect on their feedback.  </p>
+                </div>
+            ], 
                 id: 1,  pic: 'Project.png' , location: "McMaster University – Hamilton, ON", period: "02/2022-04/2022"
             },
             {title: 'Teaching Assistant', body:
