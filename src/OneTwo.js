@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import React  from 'react';
+import useFetch from "./useFetch";
 
 
 
@@ -10,7 +11,7 @@ const OneTwo = ({pkgs}) => {
     return (
 
         <div className={loc.state == null ? "light" : loc.state.mody}>
-        {
+            {
         <div className="home">
          {pkgs.map((pkg) =>  (
             <div className={pkg.id == 0 ? 'first': 'none'} key = {pkg.id}>
@@ -32,7 +33,7 @@ const OneTwo = ({pkgs}) => {
                 </div>
 
             </ div>
-         ))
+         ))}
 
         </div>
     }
