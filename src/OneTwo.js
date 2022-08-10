@@ -10,7 +10,7 @@ const OneTwo = ({pkgs}) => {
     return (
 
         <div className={loc.state == null ? "light" : loc.state.mody}>
-
+        {
         <div className="home">
          {pkgs.map((pkg) =>  (
             <div className={pkg.id == 0 ? 'first': 'none'} key = {pkg.id}>
