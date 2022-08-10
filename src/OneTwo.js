@@ -1,21 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import React  from 'react';
-import useFetch from "./useFetch";
 
 
 
 const OneTwo = ({pkgs}) => {
     let loc = useLocation();
-    let img = new Array(pkgs.length);
-    console.log(img)
 
-    for (let i = 0; i < (pkgs.length); i++){
-        img[i] = useFetch(pkgs[i].pic)
-    }
-    
-    return ( 
-    
+    return (
+
         <div className={loc.state == null ? "light" : loc.state.mody}>
             {img &&
         <div className="home">
@@ -45,9 +38,9 @@ const OneTwo = ({pkgs}) => {
     }
 
 
-    </div> 
+    </div>
 
 );
 }
- 
+
 export default OneTwo;
