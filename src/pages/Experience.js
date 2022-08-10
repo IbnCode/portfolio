@@ -1,4 +1,4 @@
-import OneTwo from './OneTwo';
+import OneTwo from '../OneTwo';
 import React  from 'react';
 
 const Experience = () => {
@@ -18,7 +18,7 @@ const Experience = () => {
             </div>
             ]
             , 
-                id: 0,  pic: 'Project.png', location: "McMaster University – Hamilton, ON", period: "05/2022-Now"
+                id: 0,  pic: 'project.png', location: "McMaster University – Hamilton, ON", period: "05/2022-Now"
             },
             {title: 'Research Assistant', body: [
                 <div>            
@@ -33,7 +33,7 @@ const Experience = () => {
                 <p>I gained a lot of experience in testing algorithms and image processing and have advanced my python skills. I have improved my communication skills and was able to answer the needs of my supervisors and reflect on their feedback.  </p>
                 </div>
             ], 
-                id: 1,  pic: 'Project.png' , location: "McMaster University – Hamilton, ON", period: "02/2022-04/2022"
+                id: 1,  pic: 'project.png' , location: "McMaster University – Hamilton, ON", period: "02/2022-04/2022"
             },
             {title: 'Teaching Assistant', body:
             [    <div>            

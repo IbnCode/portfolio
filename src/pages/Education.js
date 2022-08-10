@@ -1,5 +1,5 @@
 import React  from 'react';
-import OneTwo from './OneTwo';
+import OneTwo from '../OneTwo';
 
 const Education = () => {
     const pkgs = [

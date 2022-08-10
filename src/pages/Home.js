@@ -1,4 +1,4 @@
-import OneTwo from './OneTwo';
+import OneTwo from '../OneTwo';
 import React  from 'react';
 
 
@@ -8,7 +8,7 @@ const Home = () => {
             id: 0,  pic: 'Ahmed.jpeg'
         },
         {title: 'Awards and Extracurriculars', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            id: 1,  pic: 'Project.png'
+            id: 1,  pic: 'project.png'
         },
         {title: 'Education', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             id: 2,  pic: 'McMaster.jpeg'

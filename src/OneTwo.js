@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import React  from 'react';
-import useFetch from "../useFetch";
+import useFetch from "./useFetch";
 
 
 
@@ -22,7 +22,7 @@ const OneTwo = ({pkgs}) => {
          {pkgs.map((pkg) =>  (
             <div className={pkg.id == 0 ? 'first': 'none'} key = {pkg.id}>
                     <div   className={pkg.id % 2 == 1 ? 'two': 'one'}  >
-                    <img src = {img[pkg.id]} />
+                    <img src = {require("../public/" +  pkg.pic)} />
                     <h3>
                     {pkg.title}
                 </h3>
