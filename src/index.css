@@ -240,12 +240,11 @@ code {
 
 .home  img{
   display: flex;
-  margin-right: 25px;
+  margin-right: 30px;
   margin-bottom: 25px;
 
   max-width:15%;
 }
-
 .home div p{
   padding-top: 10px;
   font-family: 'Gothic A1', sans-serif;
@@ -260,6 +259,7 @@ code {
   float: right;
   padding-right: 5%;
   padding-left: 5%;
+  width : 100vw;
   background-color: #F5f5f5;
 }
 .home h5{
