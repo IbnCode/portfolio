@@ -4,18 +4,19 @@ import React  from 'react';
 import useFetch from "./useFetch";
 
 
+
 const OneTwo = ({pkgs}) => {
     let loc = useLocation();
-    const img = useFetch("https://myimages.s3.us-east-2.amazonaws.com/Ahmed.jpeg")
+
     return (
 
         <div className={loc.state == null ? "light" : loc.state.mody}>
             {
         <div className="home">
-         {img && pkgs.map((pkg) =>  (
+         {pkgs.map((pkg) =>  (
             <div className={pkg.id == 0 ? 'first': 'none'} key = {pkg.id}>
                     <div   className={pkg.id % 2 == 1 ? 'two': 'one'}  >
-                    <img src = {img} />
+                    <img src = {require("../public/" +  pkg.pic)} />
                     <h3>
                     {pkg.title}
                 </h3>
