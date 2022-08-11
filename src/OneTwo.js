@@ -6,7 +6,7 @@ import useFetch from "./useFetch";
 
 const OneTwo = ({pkgs}) => {
     let loc = useLocation();
-    const img = useFetch("s3://myimages/Ahmed.jpeg")
+    const img = useFetch("https://myimages.s3.us-east-2.amazonaws.com/Ahmed.jpeg")
     return (
 
         <div className={loc.state == null ? "light" : loc.state.mody}>
